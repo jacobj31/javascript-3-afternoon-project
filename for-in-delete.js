@@ -40,7 +40,11 @@
 */
 
 function showValues( obj ) {
-  //Code Here
+let cat = ''
+  for (var value in obj){
+      cat = cat + obj[value]
+  }
+  return cat
 }
 
 
@@ -53,7 +57,13 @@ function showValues( obj ) {
   Return the updated object.
 */
 
-//Code Here
+function greaterThan10(obj){
+  for (var num in obj){
+    if (obj[num] > 10){
+      obj[num] = 0
+    }
+  }return obj
+}
 
 
 

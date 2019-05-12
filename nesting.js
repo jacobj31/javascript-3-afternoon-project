@@ -50,7 +50,15 @@ var employees = [
     3. Return the updated employee array.
 */
 
-//Code Here
+function employeeUpdater(){
+  for (var value in employees){
+    if (employees[value]['firstName'] === 'Theo'){
+      delete employees[value]
+     } else if (employees[value]['firstName'] === 'Lorie'){
+      employees[value]['department'] = 'HR'
+    }
+  }return employees
+}
 
 
 
@@ -68,7 +76,16 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
     3. Return the updated array.
 */
 
-//Code Here
+  function removeDuplicates(array){
+    for (i = 0; i < array.length; i++){
+      for (b = i + 1; b < array.length; b++){
+        if (array[i] === array[b]){
+          array.splice([i], 1)
+          i--
+        }
+      }
+    }return array
+  }
 
 
 
@@ -127,6 +144,7 @@ var myCar = {
     }
   ]
 }
+
 // Do not edit the code above.
 
 /*
